@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "MCU_RaspberryPi_RP2040") (type "Legacy") (uri "C:/Projects (GitHub)/anki-macropad/libraries/symbols/MCU_RaspberryPi_RP2040.lib") (options "") (descr ""))
+	(lib (name "ABM8_272_T3") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/symbols/ABM8_272_T3.kicad_sym") (options "") (descr ""))
+)
