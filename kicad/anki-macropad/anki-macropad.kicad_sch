@@ -1147,164 +1147,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -3957,6 +3799,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+1V1"
 			(power global)
 			(pin_numbers
@@ -5009,6 +5015,110 @@
 		(color 0 0 0 0)
 		(uuid "fe05fa23-412a-457a-8e33-47961eed0b69")
 	)
+	(no_connect
+		(at 111.76 209.55)
+		(uuid "0081cf3d-a2fc-40c6-ab2f-dfed171fc6a0")
+	)
+	(no_connect
+		(at 111.76 237.49)
+		(uuid "0bc3204f-2b58-449b-825f-83f43257e0e2")
+	)
+	(no_connect
+		(at 111.76 227.33)
+		(uuid "19eae7b3-daa5-440b-a253-80b4755c7977")
+	)
+	(no_connect
+		(at 29.21 251.46)
+		(uuid "1a390f9e-a2ac-46b2-902e-188bf21c7be8")
+	)
+	(no_connect
+		(at 111.76 222.25)
+		(uuid "2ab5ed28-e7ee-41eb-9acd-fd78e597487a")
+	)
+	(no_connect
+		(at 111.76 214.63)
+		(uuid "3570a964-ad4c-42ac-8909-09c41b4d824c")
+	)
+	(no_connect
+		(at 111.76 250.19)
+		(uuid "4f611c65-40dd-4f66-bd27-d8e2426ff0fc")
+	)
+	(no_connect
+		(at 111.76 217.17)
+		(uuid "60becb9f-5e47-46b2-b690-ef91ed23c79d")
+	)
+	(no_connect
+		(at 111.76 229.87)
+		(uuid "67ed3fe8-be3a-4df6-b7c2-d15b56f0ffbd")
+	)
+	(no_connect
+		(at 111.76 260.35)
+		(uuid "7304c71f-d617-4a29-aa2f-4107b9160e44")
+	)
+	(no_connect
+		(at 111.76 255.27)
+		(uuid "7eae5d4b-88e8-4011-99cb-8b06304bca9d")
+	)
+	(no_connect
+		(at 29.21 254)
+		(uuid "8ae27fe6-cadf-4f36-9a1d-f76138b42738")
+	)
+	(no_connect
+		(at 111.76 257.81)
+		(uuid "96793795-6c3f-401c-a6b3-7c684519f5f5")
+	)
+	(no_connect
+		(at 151.13 232.41)
+		(uuid "9f5a2969-1ae0-4e8a-b203-5caf4f6a9b61")
+	)
+	(no_connect
+		(at 111.76 207.01)
+		(uuid "adcbd3f6-e969-449d-ad5b-b58588587ca6")
+	)
+	(no_connect
+		(at 111.76 212.09)
+		(uuid "b4353751-1d19-484f-abc2-185c21e85f1c")
+	)
+	(no_connect
+		(at 111.76 232.41)
+		(uuid "caa1f5b5-e65f-4ece-928a-86e9f1d7f6f8")
+	)
+	(no_connect
+		(at 111.76 224.79)
+		(uuid "cc204d55-56ee-4086-b0f4-7003f0e739c1")
+	)
+	(no_connect
+		(at 111.76 247.65)
+		(uuid "d148b166-d5b1-405b-aa7f-2862dc344677")
+	)
+	(no_connect
+		(at 111.76 242.57)
+		(uuid "dc6f660a-d286-41e0-b22d-1db88e26f19c")
+	)
+	(no_connect
+		(at 111.76 219.71)
+		(uuid "e2ca42d4-4dd4-4d77-b6e0-047a2a33dd46")
+	)
+	(no_connect
+		(at 111.76 245.11)
+		(uuid "e7895a6a-ca88-468e-9797-c72fd590a3f3")
+	)
+	(no_connect
+		(at 111.76 240.03)
+		(uuid "e7d8d80a-5d3e-4654-b9ec-ad9f94f30121")
+	)
+	(no_connect
+		(at 111.76 234.95)
+		(uuid "f2da9599-c980-4012-8533-ccaf9597df02")
+	)
+	(no_connect
+		(at 111.76 194.31)
+		(uuid "f80ee05d-30e8-4ca6-95ab-71843e1c92a7")
+	)
+	(no_connect
+		(at 111.76 262.89)
+		(uuid "ff878a0f-3569-42f4-ad4a-500a83dc956a")
+	)
 	(wire
 		(pts
 			(xy 111.76 201.93) (xy 104.14 201.93)
@@ -5191,13 +5301,13 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 166.37) (xy 195.58 166.37)
+			(xy 195.58 179.07) (xy 199.39 179.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "186534bd-cfc1-4957-8f34-271f78af1fad")
+		(uuid "19b45585-f5fd-47f3-b8e2-720e6a4ec013")
 	)
 	(wire
 		(pts
@@ -6551,16 +6661,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 162.56) (xy 196.85 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b936214f-dd84-490d-b799-57ab9ecb573a")
-	)
-	(wire
-		(pts
 			(xy 203.2 100.33) (xy 217.17 100.33)
 		)
 		(stroke
@@ -7049,26 +7149,6 @@
 		)
 		(uuid "0105cbe1-47e5-4456-8484-018460d25e53")
 	)
-	(label "SWD"
-		(at 29.21 254 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "02b4d21d-149b-42f8-89d7-9ecc31965017")
-	)
-	(label "GPIO20"
-		(at 111.76 237.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0a4c7173-6795-4b4b-9ef0-80b0ecc7a2ed")
-	)
 	(label "XOUT"
 		(at 247.65 123.19 0)
 		(effects
@@ -7079,17 +7159,17 @@
 		)
 		(uuid "0caedad0-e7fe-4ba5-a418-1e64839e5e6c")
 	)
-	(label "GPIO29_ADC3"
-		(at 111.76 262.89 0)
+	(label "COLUMN 1"
+		(at 111.76 199.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "10479806-7a3b-4334-a706-766dc66c5e1d")
+		(uuid "0f56a897-01c0-4301-b6f5-5eff9d74ac62")
 	)
-	(label "~{USB_BOOT}"
+	(label "USB_BOOT"
 		(at 198.12 168.91 0)
 		(effects
 			(font
@@ -7109,6 +7189,16 @@
 		)
 		(uuid "156623e4-5bd9-4c54-91a3-d421742212c5")
 	)
+	(label "COLUMN 0"
+		(at 111.76 196.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e84ead3-ac52-4187-8d56-d875c738a526")
+	)
 	(label "COLUMN 3"
 		(at 374.65 40.64 90)
 		(effects
@@ -7118,26 +7208,6 @@
 			(justify left bottom)
 		)
 		(uuid "2622eb22-a46f-4e74-8e36-a0fa2774fb1a")
-	)
-	(label "GPIO4"
-		(at 111.76 196.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "27fb0f91-a780-4d71-a15b-3d862c80c141")
-	)
-	(label "GPIO15"
-		(at 111.76 224.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "33ef0edf-5821-4740-b3d8-e89067eb30f0")
 	)
 	(label "QSPI_SD2"
 		(at 224.79 179.07 0)
@@ -7159,15 +7229,15 @@
 		)
 		(uuid "3da405f4-b86f-4389-a053-fc276e7906b7")
 	)
-	(label "GPIO17"
-		(at 111.76 229.87 0)
+	(label "ROW 0"
+		(at 111.76 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "4193b9f8-8b1b-4132-a857-3df445b29efd")
+		(uuid "3ed7580c-fb96-4a5c-8dc0-c56f8f07ce58")
 	)
 	(label "COLUMN 2"
 		(at 358.14 40.64 90)
@@ -7189,15 +7259,15 @@
 		)
 		(uuid "437bcb32-85e2-4452-b7ef-f8f1f6bad5a5")
 	)
-	(label "GPIO22"
-		(at 111.76 242.57 0)
+	(label "ROW 2"
+		(at 111.76 191.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "45c2e9d6-0549-4b54-8cfc-6d933b67e411")
+		(uuid "4aba9f5d-2119-4040-ac25-f4874a1ef234")
 	)
 	(label "USB_D-"
 		(at 223.52 237.49 0)
@@ -7208,16 +7278,6 @@
 			(justify left bottom)
 		)
 		(uuid "4fd69c1c-8688-4c88-a87f-6409a045c099")
-	)
-	(label "GPIO18"
-		(at 111.76 232.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51114601-a717-40d3-a372-2bb8bf191800")
 	)
 	(label "ROW 1"
 		(at 391.16 83.82 0)
@@ -7269,56 +7329,6 @@
 		)
 		(uuid "6737011e-1bd8-4f60-a5d6-480448458183")
 	)
-	(label "GPIO13"
-		(at 111.76 219.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "692f6f6b-aa55-439b-a46c-bbee486d4555")
-	)
-	(label "GPIO5"
-		(at 111.76 199.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "696ee1c1-1039-4ff3-97b5-91081cb57df8")
-	)
-	(label "GPIO28_ADC2"
-		(at 111.76 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6ee4620b-c035-4904-a0c2-21854afab234")
-	)
-	(label "GPIO24"
-		(at 111.76 247.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6f539327-6ab5-4c5f-8da5-5c8a58e5b907")
-	)
-	(label "GPIO0"
-		(at 111.76 186.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7677c52c-b764-489f-b845-259546f89edb")
-	)
 	(label "USB_D-"
 		(at 289.56 269.24 0)
 		(effects
@@ -7329,16 +7339,6 @@
 		)
 		(uuid "7783f20f-04dd-4983-b4b9-1a564a4e6724")
 	)
-	(label "GPIO16"
-		(at 111.76 227.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7bd59c3c-ab87-4534-8164-4381e6f6b783")
-	)
 	(label "ROW 2"
 		(at 391.16 104.14 0)
 		(effects
@@ -7348,26 +7348,6 @@
 			(justify left bottom)
 		)
 		(uuid "7cd15478-6dcb-4bfc-b546-f87e2d098b5e")
-	)
-	(label "GPIO26_ADC0"
-		(at 111.76 255.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7d58e9b3-77f2-4dc0-9487-808f60c0c5b4")
-	)
-	(label "GPIO14"
-		(at 111.76 222.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ebba978-96e3-4c4f-b3c7-76a41b51b653")
 	)
 	(label "QSPI_SCLK"
 		(at 29.21 203.2 0)
@@ -7419,46 +7399,6 @@
 		)
 		(uuid "86ea8082-8a2a-43a0-91b4-c512d8fca900")
 	)
-	(label "GPIO9"
-		(at 111.76 209.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8a1ceaaa-5db4-45d3-a69b-b3aa95decd56")
-	)
-	(label "GPIO23"
-		(at 111.76 245.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8cd97bdb-75fa-45c7-b9de-fb8df5b9a70a")
-	)
-	(label "GPIO27_ADC1"
-		(at 111.76 257.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "90ef2923-934c-4262-8ae3-b5e5c2e1e896")
-	)
-	(label "GPIO7"
-		(at 111.76 204.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "913aaa1c-4e94-406d-94c8-12f308716760")
-	)
 	(label "COLUMN 1"
 		(at 341.63 40.64 90)
 		(effects
@@ -7469,25 +7409,15 @@
 		)
 		(uuid "9e5a9582-94a1-4aba-bcbd-5af507abff3b")
 	)
-	(label "GPIO3"
-		(at 111.76 194.31 0)
+	(label "COLUMN 3"
+		(at 111.76 204.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "9f44bfa1-b0a1-4fcd-82e5-7efd49d1e3f3")
-	)
-	(label "GPIO6"
-		(at 111.76 201.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a16ef88c-7322-40c4-b4b6-162f1dd23b14")
+		(uuid "9f4a68a5-565c-4d3d-95e8-907be0f67017")
 	)
 	(label "XIN"
 		(at 247.65 100.33 0)
@@ -7499,36 +7429,6 @@
 		)
 		(uuid "a272aaa9-3efd-4254-bc0d-9a6a79a81205")
 	)
-	(label "GPIO19"
-		(at 111.76 234.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a91de568-2035-4bb6-9eef-b666158c595d")
-	)
-	(label "GPIO25"
-		(at 111.76 250.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "aa22560f-6e48-41cb-96d4-2bc29d8ae3f3")
-	)
-	(label "SWCLK"
-		(at 29.21 251.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b4014fef-57d3-4ccb-ad17-279bda1c2877")
-	)
 	(label "QSPI_SS"
 		(at 224.79 168.91 0)
 		(effects
@@ -7539,25 +7439,15 @@
 		)
 		(uuid "b4b8f227-8700-4d32-b93b-573d9a214e5a")
 	)
-	(label "GPIO11"
-		(at 111.76 214.63 0)
+	(label "ROW 1"
+		(at 111.76 189.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "bb82ba8a-9ec5-406b-b7c9-9b85c6a7ae43")
-	)
-	(label "GPIO8"
-		(at 111.76 207.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bf10d2a5-e89a-4b0c-b72d-4fbc20f7fc13")
+		(uuid "bf1c642b-48e2-4301-9b1c-70a594ac307a")
 	)
 	(label "RUN"
 		(at 29.21 240.03 0)
@@ -7569,16 +7459,6 @@
 		)
 		(uuid "ca760c88-f191-4152-bfd2-34d7392dfda2")
 	)
-	(label "GPIO10"
-		(at 111.76 212.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cc178bdf-1b42-4f87-9d3e-fd011011fa6f")
-	)
 	(label "USB_D+"
 		(at 133.35 176.53 0)
 		(effects
@@ -7589,25 +7469,15 @@
 		)
 		(uuid "cee66406-9c24-442b-98d5-195204d31a04")
 	)
-	(label "GPIO12"
-		(at 111.76 217.17 0)
+	(label "COLUMN 2"
+		(at 111.76 201.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "d07e8727-9847-434a-b418-abaca99e9fec")
-	)
-	(label "GPIO21"
-		(at 111.76 240.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d536d3f2-cb17-432c-bbfa-d17331e8c673")
+		(uuid "d65cb9e3-f414-4613-a128-87f32fea0c5b")
 	)
 	(label "QSPI_SD0"
 		(at 224.79 173.99 0)
@@ -7618,16 +7488,6 @@
 			(justify left bottom)
 		)
 		(uuid "deec0850-f36b-4a2c-92fc-d82081d95d4a")
-	)
-	(label "GPIO2"
-		(at 111.76 191.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e58bd62a-4a1f-4070-9259-29936fa7c0b9")
 	)
 	(label "MCU_D+"
 		(at 264.16 266.7 0)
@@ -7668,16 +7528,6 @@
 			(justify left bottom)
 		)
 		(uuid "f1169aa7-cc57-4e01-86ee-83fb4f2ab8c2")
-	)
-	(label "GPIO1"
-		(at 111.76 189.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fad48dba-e39d-46db-9d18-546a61e6ec50")
 	)
 	(label "QSPI_SS"
 		(at 29.21 187.96 0)
@@ -8378,85 +8228,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 190.5 168.91 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "36abfe06-894d-4d51-8a00-2aa0b72c4af1")
-		(property "Reference" "J2"
-			(at 190.5 163.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 190.5 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 190.5 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4c6e8986-d7ec-4996-8fac-09abcc72dff4")
-		)
-		(pin "2"
-			(uuid "7b430021-84d9-4c1c-8118-3b62865c54d0")
-		)
-		(instances
-			(project "anki-macropad"
-				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 120.65 176.53 90)
 		(unit 1)
@@ -8530,6 +8301,87 @@
 			(project "anki-macropad"
 				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 195.58 173.99 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "377da1ed-a113-4c27-b50d-eeddc205081d")
+		(property "Reference" "SW1"
+			(at 190.754 172.466 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 186.436 174.752 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 195.58 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "06bef209-c04e-42e0-897e-cf2c3e5767be")
+		)
+		(pin "1"
+			(uuid "4af91428-61c8-444a-b8e4-a8245c7c0481")
+		)
+		(instances
+			(project "anki-macropad"
+				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -9409,7 +9261,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 162.56 180)
+		(at 199.39 179.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9419,7 +9271,7 @@
 		(dnp no)
 		(uuid "659940fe-f285-4539-a506-0737d5b96a44")
 		(property "Reference" "#PWR021"
-			(at 196.85 156.21 0)
+			(at 199.39 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9430,7 +9282,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 158.75 0)
+			(at 199.39 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9440,7 +9292,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 162.56 0)
+			(at 199.39 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9451,7 +9303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 162.56 0)
+			(at 199.39 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9462,7 +9314,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 162.56 0)
+			(at 199.39 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10602,6 +10454,86 @@
 			(project "anki-macropad"
 				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 309.88 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f77b869-2c51-4e8e-a769-84c4615e1b31")
+		(property "Reference" "SW2"
+			(at 309.88 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 309.88 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 309.88 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "753b7141-bcbd-43a3-aed2-5b476a7d1bd6")
+		)
+		(pin "1"
+			(uuid "cb7478ce-4ea3-4496-bb00-4cb5c649be28")
+		)
+		(instances
+			(project "anki-macropad"
+				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
