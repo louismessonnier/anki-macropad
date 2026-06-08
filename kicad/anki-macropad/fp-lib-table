@@ -1,5 +1,8 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "ABM8_272_T3") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/ABM8_272_T3.pretty") (options "") (descr ""))
-	(lib (name "RP2040_minimal_r2") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/RP2040_minimal_r2.pretty") (options "") (descr ""))
+	(lib (name "PTS810_CNK") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/PTS810_CNK.pretty") (options "") (descr ""))
+	(lib (name "USB_C_HRO_TYPE-C-31-M-12") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/USB_C_HRO_TYPE-C-31-M-12.pretty") (options "") (descr ""))
+	(lib (name "RP2040-QFN-56") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/RP2040-QFN-56.pretty") (options "") (descr ""))
+	(lib (name "Diode_SOD-123") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/Diode_SOD-123.pretty") (options "") (descr ""))
 )
