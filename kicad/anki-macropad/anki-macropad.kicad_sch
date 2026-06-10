@@ -5556,6 +5556,10 @@
 		(uuid "0bc3204f-2b58-449b-825f-83f43257e0e2")
 	)
 	(no_connect
+		(at 111.76 196.85)
+		(uuid "110906e3-ec57-421a-8f6b-1fef5fbde565")
+	)
+	(no_connect
 		(at 111.76 227.33)
 		(uuid "19eae7b3-daa5-440b-a253-80b4755c7977")
 	)
@@ -5570,10 +5574,6 @@
 	(no_connect
 		(at 111.76 214.63)
 		(uuid "3570a964-ad4c-42ac-8909-09c41b4d824c")
-	)
-	(no_connect
-		(at 111.76 250.19)
-		(uuid "4f611c65-40dd-4f66-bd27-d8e2426ff0fc")
 	)
 	(no_connect
 		(at 111.76 217.17)
@@ -5604,6 +5604,10 @@
 		(uuid "9eb08419-7334-4fc5-af78-8d2c3edc56a8")
 	)
 	(no_connect
+		(at 111.76 199.39)
+		(uuid "a4f2461e-7278-49b4-b8ee-9acf66056faf")
+	)
+	(no_connect
 		(at 111.76 207.01)
 		(uuid "adcbd3f6-e969-449d-ad5b-b58588587ca6")
 	)
@@ -5618,10 +5622,6 @@
 	(no_connect
 		(at 111.76 224.79)
 		(uuid "cc204d55-56ee-4086-b0f4-7003f0e739c1")
-	)
-	(no_connect
-		(at 111.76 247.65)
-		(uuid "d148b166-d5b1-405b-aa7f-2862dc344677")
 	)
 	(no_connect
 		(at 111.76 242.57)
@@ -7761,16 +7761,6 @@
 		)
 		(uuid "0caedad0-e7fe-4ba5-a418-1e64839e5e6c")
 	)
-	(label "COLUMN 1"
-		(at 111.76 199.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0f56a897-01c0-4301-b6f5-5eff9d74ac62")
-	)
 	(label "QSPI_SD1"
 		(at 29.21 194.31 0)
 		(effects
@@ -7780,16 +7770,6 @@
 			(justify left bottom)
 		)
 		(uuid "156623e4-5bd9-4c54-91a3-d421742212c5")
-	)
-	(label "COLUMN 0"
-		(at 111.76 196.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1e84ead3-ac52-4187-8d56-d875c738a526")
 	)
 	(label "COLUMN 3"
 		(at 374.65 40.64 90)
@@ -7931,6 +7911,16 @@
 		)
 		(uuid "6737011e-1bd8-4f60-a5d6-480448458183")
 	)
+	(label "COLUMN 1"
+		(at 111.76 250.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "725c2aca-8975-4d2f-a905-338fb4f73a3b")
+	)
 	(label "USB_D-"
 		(at 289.56 269.24 0)
 		(effects
@@ -7990,6 +7980,16 @@
 			(justify left bottom)
 		)
 		(uuid "816552ce-d01d-4b45-aa58-880fb6688413")
+	)
+	(label "COLUMN 0"
+		(at 111.76 247.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82fbca92-9e05-445b-b769-eaaad77a82ac")
 	)
 	(label "QSPI_SD0"
 		(at 29.21 191.77 0)
@@ -8994,7 +8994,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 120.65 176.53 90)
+		(at 120.65 176.53 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9004,7 +9004,7 @@
 		(dnp no)
 		(uuid "3743d168-62ae-48b5-82ee-73471720c7cf")
 		(property "Reference" "R3"
-			(at 120.65 174.498 90)
+			(at 120.65 178.562 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9024,7 +9024,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 120.65 178.308 90)
+			(at 120.65 174.752 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9083,7 +9083,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b5e0e92-8b4d-4bc8-8573-af99e14a0109")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 266.7 215.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9148,7 +9148,7 @@
 		(instances
 			(project "anki-macropad"
 				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -12325,7 +12325,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c180e026-3b86-444b-a665-1329db2b2df6")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 43.18 170.434 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12554,7 +12554,7 @@
 		(instances
 			(project "anki-macropad"
 				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -13079,7 +13079,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d9955d85-fd42-4dd9-9d4c-924f6b6cff57")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 222.758 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13161,7 +13161,7 @@
 		(instances
 			(project "anki-macropad"
 				(path "/601e356b-8d57-4612-aef2-e702ce6eb0da"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -13556,7 +13556,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 226.06 229.87 270)
+		(at 226.06 229.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13586,7 +13586,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 226.06 228.092 90)
+			(at 226.06 231.648 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
