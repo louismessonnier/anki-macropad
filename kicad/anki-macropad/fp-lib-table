@@ -5,4 +5,5 @@
 	(lib (name "USB_C_HRO_TYPE-C-31-M-12") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/USB_C_HRO_TYPE-C-31-M-12.pretty") (options "") (descr ""))
 	(lib (name "RP2040-QFN-56") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/RP2040-QFN-56.pretty") (options "") (descr ""))
 	(lib (name "Diode_SOD-123") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/Diode_SOD-123.pretty") (options "") (descr ""))
+	(lib (name "OP") (type "KiCad") (uri "C:/Projects (GitHub)/anki-macropad/libraries/footprints/OP.pretty") (options "") (descr ""))
 )
