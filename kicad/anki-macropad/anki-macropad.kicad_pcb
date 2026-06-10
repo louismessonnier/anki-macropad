@@ -93,7 +93,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(grid_origin 144.557499 33.475)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
@@ -843,7 +842,7 @@
 	(footprint "OP:g5"
 		(layer "F.Cu")
 		(uuid "46c8cce6-12cd-45b8-8d45-d6a4223d1b51")
-		(at 53.967499 89.115)
+		(at 53.461079 89.702346)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")
