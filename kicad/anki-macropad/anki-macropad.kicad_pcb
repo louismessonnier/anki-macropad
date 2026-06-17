@@ -44,7 +44,7 @@
 			)
 			(layer "F.Mask"
 				(type "Top Solder Mask")
-				(color "Black")
+				(color "Green")
 				(thickness 0.01)
 			)
 			(layer "F.Cu"
@@ -64,7 +64,7 @@
 			)
 			(layer "B.Mask"
 				(type "Bottom Solder Mask")
-				(color "Black")
+				(color "Green")
 				(thickness 0.01)
 			)
 			(layer "B.Paste"
@@ -93,7 +93,7 @@
 		)
 		(capping no)
 		(filling no)
-		(grid_origin 144.557499 33.475)
+		(grid_origin 45.307499 95.624999)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -11426,44 +11426,6 @@
 	(dimension
 		(type orthogonal)
 		(layer "Dwgs.User")
-		(uuid "376f910c-bf32-45fc-b5f3-14271356a26a")
-		(pts
-			(xy 49.993919 104.647653) (xy 74.993919 89.997654)
-		)
-		(height 5)
-		(orientation 0)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-			(suppress_zeroes yes)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(arrow_direction outward)
-			(extension_height 0.58642)
-			(extension_offset 0.5)
-			(keep_text_aligned yes)
-		)
-		(gr_text "25 mm"
-			(at 62.493919 108.497653 0)
-			(layer "Dwgs.User")
-			(uuid "376f910c-bf32-45fc-b5f3-14271356a26a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-	)
-	(dimension
-		(type orthogonal)
-		(layer "Dwgs.User")
 		(uuid "41add233-4ebd-4955-88be-0dad110bade4")
 		(pts
 			(xy 142.5575 92.625) (xy 144.557499 92.625)
@@ -11692,6 +11654,44 @@
 	(dimension
 		(type orthogonal)
 		(layer "Dwgs.User")
+		(uuid "a315879d-bc44-4f1a-a7c1-6ac19910613f")
+		(pts
+			(xy 45.307499 95.624999) (xy 70.307499 80.624999)
+		)
+		(height 6.8)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "25 mm"
+			(at 57.807499 101.324999 0)
+			(layer "Dwgs.User")
+			(uuid "a315879d-bc44-4f1a-a7c1-6ac19910613f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "Dwgs.User")
 		(uuid "a562a5f6-4a45-4e09-b934-5a33e0c00c39")
 		(pts
 			(xy 144.557499 95.624999) (xy 142.5575 92.625)
@@ -11806,11 +11806,11 @@
 	(dimension
 		(type orthogonal)
 		(layer "Dwgs.User")
-		(uuid "e2530525-3451-429e-b9b6-3256fb15d4a4")
+		(uuid "e8453c9f-9357-4f4a-aaa7-ea61655f7493")
 		(pts
-			(xy 74.993919 89.647653) (xy 74.993919 104.647653)
+			(xy 45.307499 95.624999) (xy 70.307499 80.624999)
 		)
-		(height -31)
+		(height -3.25)
 		(orientation 1)
 		(format
 			(prefix "")
@@ -11830,13 +11830,13 @@
 			(keep_text_aligned yes)
 		)
 		(gr_text "15 mm"
-			(at 42.843919 97.147653 90)
+			(at 40.957499 88.124999 90)
 			(layer "Dwgs.User")
-			(uuid "e2530525-3451-429e-b9b6-3256fb15d4a4")
+			(uuid "e8453c9f-9357-4f4a-aaa7-ea61655f7493")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.1)
 				)
 			)
 		)
