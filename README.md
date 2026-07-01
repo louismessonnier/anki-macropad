@@ -2,7 +2,7 @@
 
 A custom 6-key macropad designed for use with [Anki](https://apps.ankiweb.net/), a spaced repetition flashcard application. The macropad features an RP2040 microcontroller directly on the PCB, a custom case, and QMK firmware.
 
-!\[Finished macropad](images/v1\_outside-top.JPEG)
+!\[Finished macropad](images/anki-macropad\_assembly-iso\_v2.JPG)
 
 \---
 
@@ -136,7 +136,7 @@ The RP2040 schematic is divided into four sections:
 * **Flash Storage** — W25Q128JVS QSPI flash with decoupling cap and BOOTSEL button circuit
 * **Connector** — USB-C connector, NCP1117 LDO voltage regulator, ESD protection (USBLC6-2SC6)
 
-!\[RP2040 hardware schematic](images/anki-macropad\_schematic\_RP2040+hardware.png)
+!\[RP2040 hardware schematic](images/anki-macropad\_schematic\_RP2040-hardware.png)
 
 The ESD protection component was added based on the recommendation of the PCBSync guide and was not present in the minimal design example.
 
