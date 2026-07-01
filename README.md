@@ -2,9 +2,9 @@
 
 A custom 6-key macropad designed for use with [Anki](https://apps.ankiweb.net/), a spaced repetition flashcard application. The macropad features an RP2040 microcontroller directly on the PCB, a custom case, and QMK firmware.
 
-!\[Finished macropad](images/anki-macropad\_assembly-iso\_v2.JPG)
+![Finished macropad](images/anki-macropad_assembly-iso_v2.JPG)
 
-\---
+---
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ A custom 6-key macropad designed for use with [Anki](https://apps.ankiweb.net/),
 * [Case Design](#case-design)
 * [Firmware](#firmware)
 
-\---
+---
 
 ## Overview
 
@@ -23,9 +23,9 @@ Rather than using a pre-built microcontroller board such as a Raspberry Pi Pico,
 
 The macropad is designed around the Anki study workflow: rating flashcards (Again / Hard / Good / Easy), flipping cards to reveal the answer, and editing cards on the fly.
 
-**Tools used:** KiCad (schematic \& PCB), SolidWorks (case), QMK MSYS (firmware), JLCPCB (PCB fabrication)
+**Tools used:** KiCad (schematic & PCB), SolidWorks (case), QMK MSYS (firmware), JLCPCB (PCB fabrication)
 
-\---
+---
 
 ## Planning
 
@@ -51,7 +51,7 @@ The overall project plan was structured as follows:
 |[Hardware Design with RP2040 — DigiKey YouTube](https://www.youtube.com/watch?v=kcwvuwetgEQ&t=7s)|Video covering key aspects of designing, fabricating, and testing a custom PCB with an RP2040.|
 |[QMK Firmware Documentation](https://docs.qmk.fm/)|Official documentation for QMK firmware used to configure and build the keyboard firmware.|
 
-\---
+---
 
 ## Layout Design
 
@@ -65,9 +65,9 @@ The macropad is designed around the core Anki study workflow:
 
 After testing different configurations on a standard keyboard, the following layout was chosen. The four rating keys are in the top row. A wide 3U key on the bottom acts as the spacebar/flip key, and the edit key sits to the right as a thumb key.
 
-!\[Keyboard layout](images/keyboard-layout.svg)
+![Keyboard layout](images/keyboard-layout.svg)
 
-\---
+---
 
 ## PCB Design
 
@@ -92,7 +92,7 @@ The following components were selected to support the RP2040, largely following 
 |10µF capacitors (0805)|2|Input and output decoupling for LDO|
 |USBLC6-2SC6 ESD protection (SOT-23-6)|1|Protect against ESD on USB lines|
 |100nF decoupling capacitors (0402)|9|Filter power supply noise for RP2040 power pins|
-|1µF capacitors (0402)|2|Stabilise internal 1.1V voltage regulator (VREG\_IN and VREG\_OUT)|
+|1µF capacitors (0402)|2|Stabilise internal 1.1V voltage regulator (VREG_IN and VREG_OUT)|
 
 **Flash Storage**
 
@@ -101,7 +101,7 @@ The following components were selected to support the RP2040, largely following 
 |W25Q128JVS QSPI Flash (SOIC-8)|1|Store program code for RP2040 to boot from|
 |100nF capacitor (0402)|1|Decoupling for flash VCC|
 |PTS810 SJK 250 SMTR LFS tactile button|1|BOOTSEL button — hold while powering on to enter USB bootloader mode|
-|1kΩ resistor (0402)|1|Series resistor on QSPI\_SS for BOOTSEL circuit|
+|1kΩ resistor (0402)|1|Series resistor on QSPI_SS for BOOTSEL circuit|
 |10kΩ resistor (0402)|1|Pull-up resistor for BOOTSEL circuit|
 
 **Crystal Oscillator**
@@ -116,7 +116,7 @@ The following components were selected to support the RP2040, largely following 
 
 |Component|Quantity|Use|
 |-|-|-|
-|27Ω series resistors (0402)|2|USB impedance matching on USB\_DP and USB\_DM|
+|27Ω series resistors (0402)|2|USB impedance matching on USB_DP and USB_DM|
 
 **Key Matrix**
 
@@ -136,7 +136,7 @@ The RP2040 schematic is divided into four sections:
 * **Flash Storage** — W25Q128JVS QSPI flash with decoupling cap and BOOTSEL button circuit
 * **Connector** — USB-C connector, NCP1117 LDO voltage regulator, ESD protection (USBLC6-2SC6)
 
-!\[RP2040 hardware schematic](images/anki-macropad\_schematic\_RP2040-hardware.png)
+![RP2040 hardware schematic](images/anki-macropad_schematic_RP2040-hardware.png)
 
 The ESD protection component was added based on the recommendation of the PCBSync guide and was not present in the minimal design example.
 
@@ -144,7 +144,7 @@ The ESD protection component was added based on the recommendation of the PCBSyn
 
 A 3-row × 4-column matrix is used, even though the macropad only has 6 keys. Using a matrix (rather than one GPIO per switch) is standard practice and allows diodes to be included. The diodes solve the ghosting problem — without them, pressing three keys in an L-shaped pattern can falsely register the fourth corner key. The diodes enforce one-way current flow, which also enables N-key rollover.
 
-!\[Keyboard matrix schematic](images/anki-macropad\_schematic\_key-matrix.png)
+![Keyboard matrix schematic](images/anki-macropad_schematic_key-matrix.png)
 
 GPIO assignments:
 
@@ -153,7 +153,7 @@ GPIO assignments:
 
 #### Full Schematic
 
-!\[Full schematic](images/anki-macropad\_schematic\_whole.svg)
+![Full schematic](images/anki-macropad_schematic_whole.svg)
 
 The two modules above are combined on a single schematic sheet, along with mounting holes and power flags for VBUS and GND. GPIO row and column pin assignments were chosen based on the RP2040 footprint to minimise routing difficulty on the PCB layout.
 
@@ -166,7 +166,7 @@ Footprints for most components came from KiCad's built-in libraries. The followi
 * **Matrix diodes** — SOD-123 footprint from Joe Scotto's repository
 * **Resistors and capacitors** — 0402 footprints, same as used in the minimal design example
 
-!\[Footprint assignments](images/anki-macropad\_footprint-assignment.png)
+![Footprint assignments](images/anki-macropad_footprint-assignment.png)
 
 ### Board Configuration
 
@@ -245,12 +245,12 @@ The RP2040 and all its supporting components are placed on the back of the board
 Key layout decisions:
 
 * Decoupling capacitors placed as close as possible to the RP2040's power pins
-* 1µF VREG capacitors (C8, C10) placed directly next to VREG\_IN (pin 45) and VREG\_OUT (pin 44)
+* 1µF VREG capacitors (C8, C10) placed directly next to VREG_IN (pin 45) and VREG_OUT (pin 44)
 * QSPI flash connected to the RP2040 with short, direct traces
 * R1 and R2 (BOOTSEL resistors) placed close to the flash chip
 * USB series termination resistors (R3, R4) placed close to the RP2040's USB pins
 
-!\[PCB layout](images/anki-macropad\_pcb-layout.png)
+![PCB layout](images/anki-macropad_pcb-layout.png)
 
 ### Trace Routing
 
@@ -261,14 +261,14 @@ Routing was done almost entirely on the back copper layer, where the components 
 
 For the USB data lines, a solid ground fill is placed directly below the traces for the full length of the track, as required by the hardware documentation for the transmission lines to function correctly. Crystal traces were kept short and routed directly to the MCU pins.
 
-!\[Front copper and ground fill](images/anki-macropad\_pcb-traces\_front.png)
-!\[Back copper, traces, and fills](images/anki-macropad\_pcb-traces\_back.png)
+![Front copper and ground fill](images/anki-macropad_pcb-traces_front.png)
+![Back copper, traces, and fills](images/anki-macropad_pcb-traces_back.png)
 
 ### Manufacturing
 
 The board was ordered from JLCPCB with SMT assembly (PCBA) for all surface-mount components except the MX switches, which were soldered by hand after the boards arrived. The minimum order was 5 PCBs.
 
-\---
+---
 
 ## Case Design
 
@@ -291,9 +291,9 @@ Key dimensions and decisions:
 * Rubber feet: 5mm × 15mm × 1.7mm
 * Fasteners: M2.5 × 16mm socket head bolts into M2.5 threaded inserts
 
-!\[V1 case iso](images/anki-macropad\_assembly-iso\_v1.JPG)
+![V1 case iso](images/anki-macropad_assembly-iso_v1.JPG)
 
-!\[V1 case exploded](images/anki-macropad\_assembly-exploded\_v1.JPG)
+![V1 case exploded](images/anki-macropad_assembly-exploded_v1.JPG)
 
 ### V2
 
@@ -305,9 +305,9 @@ Improvements made in V2:
 * USB-C cutout redesigned — original cutout didn't allow the cable to fully seat. The cable was measured and the cutout was designed to match: 2.75mm tall × 8.6mm wide for the metal plug, then offset by 0.8mm for the outer plastic, with a 45° × 1.5mm chamfer on the edge. The cutout was also extended to 22mm length to clear the bottom of the case.
 * Foot cutouts enlarged by 1mm (length) and 0.5mm (width)
 
-!\[V2 case iso](images/anki-macropad\_assembly-iso\_v2.JPG)
+![V2 case iso](images/anki-macropad_assembly-iso_v2.JPG)
 
-!\[V2 case exploded](images/anki-macropad\_assembly-exploded\_v2.JPG)
+![V2 case exploded](images/anki-macropad_assembly-exploded_v2.JPG)
 
 ### V3
 
@@ -316,9 +316,9 @@ V3 was prototyped alongside V2 to test a different fastening method. Instead of 
 * Nut dimensions: 5mm wall-to-wall, 5.8mm tip-to-tip, 2mm tall
 * Nut pockets: 5.1mm wall-to-wall, 2.5mm deep
 
-!\[V3 case back](images/anki-macropad\_assembly-back\_v3.JPG)
+![V3 case back](images/anki-macropad_assembly-back_v3.JPG)
 
-\---
+---
 
 ## Firmware
 
