@@ -2,7 +2,7 @@
 
 A custom 6-key macropad designed for use with [Anki](https://apps.ankiweb.net/), a spaced repetition flashcard application. The macropad features an RP2040 microcontroller directly on the PCB, a custom case, and QMK firmware.
 
-!\[Finished macropad](images/v1\_outside-top .JPEG)
+!\[Finished macropad](images/v1\_outside-top.JPEG)
 
 \---
 
