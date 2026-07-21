@@ -92,7 +92,7 @@ The following components were selected to support the RP2040, largely following 
 |10µF capacitors (0805)|2|Input and output decoupling for LDO|
 |USBLC6-2SC6 ESD protection (SOT-23-6)|1|Protect against ESD on USB lines|
 |100nF decoupling capacitors (0402)|9|Filter power supply noise for RP2040 power pins|
-|1µF capacitors (0402)|2|Stabilise internal 1.1V voltage regulator (VREG_IN and VREG_OUT)|
+|1µF capacitors (0402)|2|Stabilize internal 1.1V voltage regulator (VREG_IN and VREG_OUT)|
 
 **Flash Storage**
 
@@ -285,7 +285,7 @@ The initial design consisted of a top case with an integrated plate and a bottom
 Key dimensions and decisions:
 
 * PCB is 99.25mm × 62.15mm; case extends 3mm beyond PCB on each edge
-* Plate is 3mm thick (1.5mm around the stabilised wide key)
+* Plate is 3mm thick (1.5mm around the stabilized wide key)
 * Each key has 19.05 × 19.05mm of space
 * USB-C cutout positioned based on KiCad component placement coordinates
 * Rubber feet: 5mm × 15mm × 1.7mm
