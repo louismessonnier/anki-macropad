@@ -270,56 +270,6 @@ The board was ordered from JLCPCB with SMT assembly (PCBA) for all surface-mount
 
 ---
 
-## Case Design
-
-The case was designed in SolidWorks. The design went through three iterations.
-
-### Plate Generation
-
-The plate design was generated using [builder.swillkb.com](http://builder.swillkb.com/) from the keyboard layout JSON file. This guaranteed correct switch spacing and generated stabiliser cutouts automatically. The plate was exported as a .dxf and imported into SolidWorks as the starting point for the top case.
-
-### V1
-
-The initial design consisted of a top case with an integrated plate and a bottom case that bolts together with the top.
-
-Key dimensions and decisions:
-
-* PCB is 99.25mm × 62.15mm; case extends 3mm beyond PCB on each edge
-* Plate is 3mm thick (1.5mm around the stabilized wide key)
-* Each key has 19.05 × 19.05mm of space
-* USB-C cutout positioned based on KiCad component placement coordinates
-* Rubber feet: 5mm × 15mm × 1.7mm
-* Fasteners: M2.5 × 16mm socket head bolts into M2.5 threaded inserts
-
-![V1 case iso](images/anki-macropad_assembly-iso_v1.JPG)
-
-![V1 case exploded](images/anki-macropad_assembly-exploded_v1.JPG)
-
-### V2
-
-Improvements made in V2:
-
-* Keycap cutouts made wider
-* Bolt holes on top case enlarged for clearance (no threading needed on top)
-* Bottom case cylinders widened to 10mm diameter
-* USB-C cutout redesigned — original cutout didn't allow the cable to fully seat. The cable was measured and the cutout was designed to match: 2.75mm tall × 8.6mm wide for the metal plug, then offset by 0.8mm for the outer plastic, with a 45° × 1.5mm chamfer on the edge. The cutout was also extended to 22mm length to clear the bottom of the case.
-* Foot cutouts enlarged by 1mm (length) and 0.5mm (width)
-
-![V2 case iso](images/anki-macropad_assembly-iso_v2.JPG)
-
-![V2 case exploded](images/anki-macropad_assembly-exploded_v2.JPG)
-
-### V3
-
-V3 was prototyped alongside V2 to test a different fastening method. Instead of threaded inserts, hex nut cutouts are used in the bottom of the case.
-
-* Nut dimensions: 5mm wall-to-wall, 5.8mm tip-to-tip, 2mm tall
-* Nut pockets: 5.1mm wall-to-wall, 2.5mm deep
-
-![V3 case back](images/anki-macropad_assembly-back_v3.JPG)
-
----
-
 ## Firmware
 
 The firmware is built using [QMK](https://qmk.fm/). See [`firmware/README.md`](firmware/README.md) for build and flash instructions.
