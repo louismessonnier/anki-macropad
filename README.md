@@ -12,7 +12,6 @@ A custom 6-key macropad designed for use with [Anki](https://apps.ankiweb.net/),
 * [Planning](#planning)
 * [Layout Design](#layout-design)
 * [PCB Design](#pcb-design)
-* [Case Design](#case-design)
 * [Firmware](#firmware)
 
 ---
